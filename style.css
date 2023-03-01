@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Globales */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    display: block;
+}
+
+
+/* Header y navegacion*/
+
+.nombre-sitio{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nombre-sitio span {
+    color: #037bc0;
+}
+.contenedor{
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav-pricipal{
+    border-color: #e1e1e1;
+    border-top-style: solid;
+    border-width: 1px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero{
+    background-image: url(asssets/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+/*Categorias*/
+
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.categorias h2{
+    text-align: center;
+}
+
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+}
+
+/*Productos*/
+
+.contenido-principal{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.producto{
+    background-color: #037bc0;
+}
+
+.texto-producto{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.texto-producto .precio {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.texto-producto a {
+    background-color: #8cbc00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 20px;
+}
+
+.texto-producto a:hover{
+    background-color: #769c02;
+}
+
+.producto img:hover{
+    transform: scale(.8);
+}
+
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.producto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
