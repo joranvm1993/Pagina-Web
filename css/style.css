@@ -47,7 +47,7 @@ img{
 }
 
 .hero{
-    background-image: url(asssets/hero.jpg);
+    background-image: url(../asssets/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -79,7 +79,7 @@ img{
 
 /*Productos*/
 
-.contenido-principal{
+/* .contenido-principal{
     margin-top: 25px;
     text-align: center;
 }
@@ -125,4 +125,109 @@ img{
 .producto:nth-child(1){
     grid-column-start: 1;
     grid-column-end: 7;
+} */
+.producto{
+    background-color: #037bc0;
+}
+
+.texto-producto{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.texto-producto{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+
+/*Sobre Nosotros*/
+
+.contenido-principal{
+    margin-top: 70px;
+}
+
+.contenido-nosotros{
+    /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Formulario */
+
+.formulario{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formulario fieldset{
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.formulario legend{
+    background-color: #037bc0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.campo label{
+    flex-basis: 10rem;
+}
+
+.btn-enviar{
+    background-color: #037bc0;
+    color: #e1e1e1;
+}
+
+/* Footer */
+
+.page-footer{
+    border-top: 1px solid #e1e1e1;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 2rem; */
+}
+
+.footer-menu a{
+    display: block;
+}
+
+.derechos-reservados{
+    text-align: center;
 }
